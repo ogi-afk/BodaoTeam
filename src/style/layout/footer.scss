@@ -1,0 +1,144 @@
+.footer {
+  &__list {
+    @include media-tablet-and-up {
+      display: flex;
+      gap: 20px;
+    }
+    @include media-lg-desktop-and-up {
+      gap: 130px;
+    }
+  }
+
+  &__card {
+    text-align: center;
+
+    @include media-tablet-and-up {
+      max-width: 50%;
+      text-align: start;
+    }
+
+    &:nth-child(2) {
+      display: none;
+    }
+
+    &:nth-child(3) {
+      text-align: start;
+
+      @include media-tablet-and-up {
+        margin-top: 123px;
+      }
+    }
+    @include media-lg-desktop-and-up {
+      &:nth-child(1) {
+        max-width: 33%;
+      }
+
+      &:nth-child(2) {
+        display: inline;
+        margin-top: 123px;
+      }
+      &:nth-child(3) {
+        max-width: 33%;
+      }
+    }
+  }
+  &__logo {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+  &__text {
+    text-align: start;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 45px;
+    margin-bottom: 45px;
+
+    @include media-tablet-and-up {
+      justify-content: normal;
+      gap: 45px;
+    }
+  }
+
+  &__social {
+    @include media-tablet-and-up {
+      max-width: 24px;
+    }
+  }
+
+  &__politic-2 {
+    display: none;
+
+    @include media-lg-desktop-and-up {
+      display: inline;
+    }
+  }
+
+  &__html-list {
+    @include media-lg-desktop-and-up {
+      margin-top: 63px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  &__title-card {
+    display: none;
+
+    @include media-tablet-and-up {
+      display: inline;
+    }
+  }
+  &__card-list {
+    @include media-lg-desktop-and-up {
+      margin-top: 60px;
+    }
+  }
+
+  &__card-point {
+    margin-bottom: 30px;
+  }
+  &__topic {
+    color: rgba(249, 186, 80, 1);
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  &__card-text {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  &__2021 {
+    padding-top: 20px;
+    border-top: 1px solid #ffffff;
+    @include media-tablet-and-up {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @include media-lg-desktop-and-up {
+      display: none;
+    }
+  }
+
+  &__politic {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  &__politic-cop {
+    display: none;
+
+    @include media-tablet-and-up {
+      display: inline;
+    }
+  }
+}
