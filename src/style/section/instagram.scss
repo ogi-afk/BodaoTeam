@@ -1,0 +1,47 @@
+.instagram {
+  &__title {
+    margin-top: 80px;
+    margin-bottom: 60px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    @include media-tablet-and-up {
+      display: grid;
+      grid-template-rows: 354px;
+      grid-template-columns: 1fr 1fr;
+    }
+    @include media-lg-desktop-and-up {
+      grid-template-rows: 410px;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  &__card {
+    &:last-child {
+      display: none;
+    }
+
+    @include media-lg-desktop-and-up {
+      &:last-child {
+        display: inline;
+      }
+    }
+  }
+
+  &__foto {
+    max-width: 150px;
+
+    @include media-tablet-and-up {
+      max-width: 354px;
+      max-height: 354px;
+    }
+    @include media-lg-desktop-and-up {
+      max-width: 410px;
+      max-height: 410px;
+    }
+  }
+}

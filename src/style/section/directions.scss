@@ -1,0 +1,81 @@
+.directions {
+  &__list {
+    @include media-xxs-mobile-only-and-up {
+      text-align: start;
+      display: grid;
+      justify-content: center;
+    }
+    @include media-tablet-and-up {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @include media-lg-desktop-and-up {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    margin-left: 30px;
+
+    @include media-lg-desktop-and-up {
+      margin-left: 300px;
+      margin-top: 150px;
+    }
+  }
+
+  &__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &:nth-child(1) {
+      background-image: url("../img/description-1.png");
+    }
+    &:nth-child(2) {
+      background-image: url("../img/directions-22.png");
+    }
+    &:nth-child(3) {
+      background-image: url("../img/directions-33.png");
+    }
+    &:nth-child(4) {
+      background-image: url("../img/directions-44.png");
+    }
+
+    @include media-tablet-and-up {
+      width: 384px;
+    }
+
+    @include media-lg-desktop-and-up {
+      width: 480px;
+      height: 700px;
+      &:nth-child(1) {
+        background-image: url("../img/directions.png");
+      }
+      &:nth-child(2) {
+        background-image: url("../img/directions-2.png");
+      }
+      &:nth-child(3) {
+        background-image: url("../img/directions-3.png");
+      }
+      &:nth-child(4) {
+        background-image: url("../img/directions-4.png");
+      }
+    }
+  }
+
+  &__sub-title {
+    color: transparent;
+    font-size: 36px;
+    line-height: 43px;
+    -webkit-text-stroke: 2px white;
+    font-weight: 500;
+  }
+}
