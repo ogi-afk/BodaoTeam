@@ -1,16 +1,20 @@
 .entry {
   margin-top: 25px;
 
-  &__wrapper {
-    background-image: url("../img/bg-section.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+  position: relative;
 
   &__introduction {
     font-size: 14px;
     line-height: 18px;
     font-weight: 500;
+
+    @include media-tablet-and-up {
+      font-size: 16px;
+      line-height: 21px;
+      font-weight: bold;
+      margin-top: 120px;
+      max-width: 222px;
+    }
   }
 
   &__title {
@@ -22,14 +26,46 @@
     text-transform: uppercase;
     margin-top: 30px;
     margin-bottom: 30px;
+
+    @include media-tablet-and-up {
+      margin-top: 77px;
+      text-align: center;
+      font-size: 64px;
+      line-height: 77px;
+      margin-bottom: 77px;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    z-index: -1;
+
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
   }
   &__text {
     font-size: 14px;
     line-height: 21px;
     font-weight: 500;
+    padding-bottom: 23px;
+
+    @include media-tablet-and-up {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: bold;
+      max-width: 380px;
+    }
   }
 
   &__button {
     margin-top: 17px;
+
+    @include media-tablet-and-up {
+      position: absolute;
+      bottom: 52px;
+      right: 1px;
+    }
   }
 }

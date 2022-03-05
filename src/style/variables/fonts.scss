@@ -1,0 +1,48 @@
+$font-size-h1: 44px;
+$font-line-height: 84px;
+
+$font-size-h1-tablet: 64px;
+$font-line-height-tablet: 77px;
+
+$font-size-h1-base: 72px;
+$font-line-height-base: 86px;
+
+@mixin font-h1 {
+  $font-size-h1: 44px;
+  $font-line-height: 84px;
+
+  @include media-tablet-only {
+    $font-size-h1-tablet: 64px;
+    $font-line-height-tablet: 77px;
+  }
+  @include media-md-desktop-and-up {
+    $font-size-h1-base: 72px;
+    $font-line-height-base: 86px;
+  }
+
+  @mixin font-text {
+    $font-size: 14px;
+    $font-line-height: 21px;
+
+    @include media-tablet-only {
+      $font-size-tablet: 16px;
+      $font-line-height-tablet: 24px;
+    }
+    @include media-md-desktop-and-up {
+      $font-size-base: 18px;
+      $font-line-height-base: 27px;
+    }
+}
+
+@mixin font-text-secondary {
+  $font-size: 14px;
+  $font-line-height: 21px;
+
+  @include media-tablet-only {
+    $font-size-tablet: 16px;
+    $font-line-height-tablet: 24px;
+  }
+  @include media-md-desktop-and-up {
+    $font-size-base: 18px;
+    $font-line-height-base: 27px;
+  }
