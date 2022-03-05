@@ -1,11 +1,11 @@
 @mixin media-xxs-mobile-only {
-  @media (max-width: 389.99px) {
+  @media (max-width: 359.99px) {
     @content;
   }
 }
 
 @mixin media-xxs-mobile-only-and-up {
-  @media (min-width: 390px) {
+  @media (min-width: 360px) {
     @content;
   }
 }

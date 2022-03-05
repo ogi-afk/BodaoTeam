@@ -12,8 +12,16 @@
       font-size: 16px;
       line-height: 21px;
       font-weight: bold;
-      margin-top: 120px;
+      margin-top: 80px;
       max-width: 222px;
+    }
+
+    @include media-lg-desktop-and-up {
+      margin-top: 115px;
+      font-size: 24px;
+      line-height: 31px;
+      font-weight: 500;
+      max-width: 330px;
     }
   }
 
@@ -27,6 +35,11 @@
     margin-top: 30px;
     margin-bottom: 30px;
 
+    @include media-xxs-mobile-only {
+      font-size: 32px;
+      line-height: 43px;
+    }
+
     @include media-tablet-and-up {
       margin-top: 77px;
       text-align: center;
@@ -34,16 +47,42 @@
       line-height: 77px;
       margin-bottom: 77px;
     }
+
+    @include media-lg-desktop-and-up {
+      flex-direction: row;
+      font-size: 72px;
+      line-height: 86px;
+      margin-top: 154px;
+    }
+  }
+
+  &__sub-title {
+    @include media-lg-desktop-and-up {
+      margin-left: 74px;
+      margin-right: 74px;
+    }
   }
 
   &__img {
     position: absolute;
     z-index: -1;
-
     top: 0;
-    bottom: 0;
-    right: 0;
     left: 0;
+
+    @include media-xxs-mobile-only-and-up {
+      top: 0;
+      transform: translateX(-50%);
+      left: 50%;
+    }
+
+    @include media-tablet-and-up {
+      width: 578px;
+      height: 628px;
+    }
+    @include media-lg-desktop-and-up {
+      width: 699px;
+      height: 753px;
+    }
   }
   &__text {
     font-size: 14px;
@@ -57,6 +96,9 @@
       font-weight: bold;
       max-width: 380px;
     }
+    @include media-lg-desktop-and-up {
+      margin-top: 197px;
+    }
   }
 
   &__button {
@@ -66,6 +108,10 @@
       position: absolute;
       bottom: 52px;
       right: 1px;
+    }
+    @include media-lg-desktop-and-up {
+      right: 150px;
+      bottom: 70px;
     }
   }
 }
