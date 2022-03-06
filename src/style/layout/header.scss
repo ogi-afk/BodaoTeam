@@ -26,7 +26,6 @@
   &__card {
     display: flex;
     margin: auto;
-
     &:nth-child(1) {
       @include media-tablet-and-up {
         order: 1;
@@ -41,13 +40,18 @@
     &:last-child {
       @include media-mobile-only {
         margin-top: 20px;
+        margin-bottom: 50px;
       }
 
       @include media-tablet-and-up {
         order: 2;
       }
     }
+    @include media-lg-desktop-and-up {
+      margin: 0px;
+    }
   }
+
   &__img-mobile {
     max-width: 20px;
     margin: 10px;
