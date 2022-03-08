@@ -1,7 +1,6 @@
 .entry {
-  margin-top: 25px;
-
   position: relative;
+  margin-top: 5px;
 
   &__introduction {
     font-size: 14px;
@@ -35,11 +34,6 @@
     margin-top: 30px;
     margin-bottom: 30px;
 
-    @include media-xxs-mobile-only {
-      font-size: 32px;
-      line-height: 43px;
-    }
-
     @include media-tablet-and-up {
       margin-top: 77px;
       text-align: center;
@@ -64,23 +58,30 @@
   }
   &__bg {
     overflow: hidden;
-    position: absolute;
-    z-index: -1;
-    border-radius: 375px 345px 0px 0px;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
   }
 
   &__img {
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    border-radius: 375px 345px 0px 0px;
+
     @include media-xxs-mobile-only-and-up {
+      top: 0;
+      transform: translateX(-50%);
+      left: 50%;
+      width: 100%;
+      max-height: 392px;
+      max-width: 390px;
     }
     @include media-tablet-and-up {
+      max-width: 578px;
+      max-height: 628px;
     }
     @include media-lg-desktop-and-up {
+      width: 699px;
+      height: 753px;
     }
   }
 
@@ -97,7 +98,7 @@
       max-width: 380px;
     }
     @include media-lg-desktop-and-up {
-      margin-top: 197px;
+      margin-top: 107px;
     }
   }
 

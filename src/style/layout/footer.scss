@@ -1,5 +1,9 @@
 .footer {
   padding-bottom: 70px;
+
+  @include media-lg-desktop-and-up {
+    margin-top: 150px;
+  }
   &__list {
     @include media-tablet-and-up {
       display: flex;

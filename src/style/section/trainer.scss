@@ -11,12 +11,47 @@
       line-height: 43px;
       margin-bottom: 60px;
     }
+
+    @include media-lg-desktop-and-up {
+      font-size: 72px;
+      line-height: 86px;
+      font-weight: bold;
+    }
   }
 
   &__list {
     @include media-tablet-and-up {
       display: flex;
       gap: 20px;
+    }
+  }
+
+  &__card {
+    @include media-lg-desktop-and-up {
+      position: relative;
+      padding-bottom: 20px;
+      overflow: hidden;
+    }
+
+    &:hover {
+      @include media-lg-desktop-and-up {
+        .sub-title {
+          transform: translateY(-150%);
+        }
+        .text {
+          transform: translateY(-100%);
+        }
+        .img-m {
+          height: 75%;
+        }
+      }
+    }
+  }
+
+  &__wrapper {
+    @include media-lg-desktop-and-up {
+      position: absolute;
+      bottom: 0;
     }
   }
 
@@ -27,6 +62,7 @@
     @include media-lg-desktop-and-up {
       max-width: 630px;
       max-height: 550px;
+      object-fit: cover;
     }
   }
 
@@ -51,7 +87,6 @@
     margin-bottom: 40px;
 
     @include media-lg-desktop-and-up {
-      display: none;
     }
   }
 }

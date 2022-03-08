@@ -6,6 +6,15 @@
     text-transform: uppercase;
     margin-bottom: 40px;
     margin-top: 60px;
+
+    @include media-lg-desktop-and-up {
+      font-size: 72px;
+      line-height: 86px;
+      font-weight: bold;
+      margin-left: 25px;
+      margin-top: 150px;
+      margin-bottom: 100px;
+    }
   }
   &__list {
     display: flex;
@@ -17,6 +26,7 @@
     @include media-tablet-and-up {
       flex-direction: row;
       flex-wrap: wrap;
+      gap: 30px;
     }
   }
 

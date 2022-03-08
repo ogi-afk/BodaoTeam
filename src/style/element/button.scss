@@ -6,4 +6,15 @@
   justify-content: center;
   align-items: center;
   gap: 54px;
+  text-transform: uppercase;
+
+  @include media-lg-desktop-and-up {
+    padding-right: 79px;
+  }
+
+  &--lg {
+    gap: 10px;
+    padding-left: 93px;
+    padding-right: 93px;
+  }
 }

@@ -2,6 +2,14 @@
   &__title {
     margin-top: 80px;
     margin-bottom: 60px;
+
+    @include media-lg-desktop-and-up {
+      font-size: 72px;
+      line-height: 86px;
+      font-weight: bold;
+      margin-top: 150px;
+      margin-bottom: 100px;
+    }
   }
 
   &__list {
@@ -17,6 +25,7 @@
     @include media-lg-desktop-and-up {
       grid-template-rows: 410px;
       grid-template-columns: 1fr 1fr 1fr;
+      gap: 30px;
     }
   }
 
