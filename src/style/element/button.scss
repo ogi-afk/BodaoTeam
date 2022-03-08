@@ -13,8 +13,12 @@
   }
 
   &--lg {
-    gap: 10px;
-    padding-left: 93px;
-    padding-right: 93px;
+    padding-left: 45px;
+    padding-right: 45px;
+    @include media-lg-desktop-and-up {
+      gap: 10px;
+      padding-left: 93px;
+      padding-right: 93px;
+    }
   }
 }
